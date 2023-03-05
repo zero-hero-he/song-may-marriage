@@ -128,3 +128,24 @@ defaults:
 # to initialize arrays in assignments (assign myarr = site.empty_array)
 # (easier to grok than assign myarr = '' | split',')
 empty_array: []
+
+exclude:
+  - CHANGELOG.md
+  - HOW_TO_RELEASE.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - '*_README.txt'
+  - gulpfile.js
+  - jekyll-text-theme.gemspec
+  - package-lock.json
+  - package.json
+  - /docs
+  - /node_modules
+  - /screenshots
+  - /test
+  - /vendor
+  - '*_LICENSE.txt'
+  - site.bat
+  - compose.rb
