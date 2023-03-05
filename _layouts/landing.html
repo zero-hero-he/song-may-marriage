@@ -37,7 +37,11 @@
                 <h2>{% if site.greeting.title %}{{ site.greeting.title }}{% else %}{{ site.title }}{% endif %}</h2>
                 <p>{% if site.greeting.text %}{{ site.greeting.text | markdownify }}{% else %}{{ site.description | markdownify }}{% endif %}</p>
               </header>
-              <ul class="icons major">{%
+              <div class="embed-container">
+                <iframe src="//player.bilibili.com/player.html?aid=865227909&bvid=BV1f54y1g7Qd&cid=1030105954&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+              </div>
+              
+              <!-- <ul class="icons major">{%
               for socloc in site.social limit:3 %}{%
                 if socloc[1] %}{%
                   if socloc[0] == 'email' %}
@@ -52,13 +56,13 @@
                   endif %}{%
                 endif %}{%
               endfor %}
-              </ul>
+              </ul> -->
             </div>
           </section>{%
           endif %}
 
         <!-- Two -->
-          <section id="landing_pages" class="wrapper alt style2">{%
+<!--           <section id="landing_pages" class="wrapper alt style2">{%
             assign sorted_pages = site.pages | sort:"id" %}{%
             for my_page in sorted_pages %}{%
               if my_page.title %}{%
@@ -81,6 +85,92 @@
                 endunless %}{%
               endif %}{%
             endfor %}
+          </section> -->
+          <section id="landing_pages" class="wrapper alt style2">
+            <section class="spotlight">
+              <div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+                <h2>Magna primis lobortis<br />
+                sed ullamcorper</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+                <h2>Tortor dolore feugiat<br />
+                elementum magna</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+                <h2>Augue eleifend aliquet<br />
+                sed condimentum</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic04.jpg" alt="" /></div><div class="content">
+                <h2>Augue eleifend aliquet<br />
+                sed condimentum</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic05.jpg" alt="" /></div><div class="content">
+                <h2>Augue eleifend aliquet<br />
+                sed condimentum</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic06.jpg" alt="" /></div><div class="content">
+                <h2>Augue eleifend aliquet<br />
+                sed condimentum</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic07.jpg" alt="" /></div><div class="content">
+                <h2>Augue eleifend aliquet<br />
+                sed condimentum</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic08.jpg" alt="" /></div><div class="content">
+                <h2>Augue eleifend aliquet<br />
+                sed condimentum</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic09.jpg" alt="" /></div><div class="content">
+                <h2>Augue eleifend aliquet<br />
+                sed condimentum</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic10.jpg" alt="" /></div><div class="content">
+                <h2>Augue eleifend aliquet<br />
+                sed condimentum</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic11.jpg" alt="" /></div><div class="content">
+                <h2>Augue eleifend aliquet<br />
+                sed condimentum</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/pic12.jpg" alt="" /></div><div class="content">
+                <h2>Augue eleifend aliquet<br />
+                sed condimentum</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+              </div>
+            </section>
           </section>
 
         <!-- Three -->{%
@@ -114,16 +204,19 @@
       endif %}
 
         <!-- CTA -->
-          <section id="cta" class="wrapper style4">
+          <section class="wrapper style1 special">
             <div class="inner">
-              <header>
+              <header class="major">
                 <h2>{{ site.closing-head }}</h2>
                 <p>{{ site.closing-para }}</p>
               </header>
-              <ul class="actions vertical">
-                <!-- <li><a href="#" class="button fit special">Activate</a></li> -->
+              <div class="embed-container-map">
+                <!-- <iframe id="iframe" src="https://m.amap.com/navi/?dest=113.350857,25.132373&destName=华城国际酒店&hideRouteIcon=&key=e698c45bb2654ef891af8520e6b992b8" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe> -->
+              </div>
+<!--              <ul class="actions vertical">
+                <li><a href="#" class="button fit special">Activate</a></li>
                 <li><a href="{{ '/contact/' | prepend: site.baseurl }}" class="button fit special">Contact</a></li>
-              </ul>
+              </ul> -->
             </div>
           </section>
 
