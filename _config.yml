@@ -15,11 +15,11 @@ title: Song & May - 我们结婚啦
 description: Song & May - 我们结婚啦
 owner:
   name: Songwen # or company name
-  url: "http://example.com" # your URL
+  url: "https://github.com/zero-hero-he" # your URL
 first_published: 2023 # if migrating another site, the year of your first publish
                       # Must be a 4-digit integer year (math is used on it)
-url: "http://example.com" # the base hostname & protocol for this site
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://zero-hero-he.github.io" # the base hostname & protocol for this site
+baseurl: "/song-may-marriage.github.io" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
@@ -32,12 +32,12 @@ greeting:
   text: _Your detailed greeting text_
 # - displayed at the bottom
 closing-head: 婚礼地址
-closing-para: _详细的婚礼地址_
+closing-para: _详细的结婚地址_
 
 # on all pages (and the first three you list display with greeting, if included)
 social:
   # twitter: https://twitter.com/_username_
-  github: https://github.com/_username_
+  github: https://github.com/zero-hero-he
   # linkedin-square: https://linkedin.com/in/_username_
   # facebook-official: https://facebook.com/_username_
   #google-plus-square: https://plus.google.com/u/0/+_username_
@@ -108,8 +108,6 @@ permalink: /:categories/:title.html
 markdown: kramdown
 #sass:
 #  style: compressed
-exclude: ['site.bat','compose.rb','README.md']
-include: ['_pages','.htaccess']
 defaults:
   - scope:
       path: _pages
@@ -128,7 +126,7 @@ defaults:
 # to initialize arrays in assignments (assign myarr = site.empty_array)
 # (easier to grok than assign myarr = '' | split',')
 empty_array: []
-
+include: ['_pages','.htaccess']
 exclude:
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
