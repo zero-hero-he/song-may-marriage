@@ -1,6 +1,5 @@
 # Welcome to Jekyll!
 
-
 # In addition to these settings, there is a file _data/tokens-template.yml
 # that you'll want to customize for your site. It's named 'tokens' because
 # that was it's original purpose, but because tokens.yml is .gitexcluded, it's
@@ -16,19 +15,21 @@ description: Song & May - 我们结婚啦
 owner:
   name: Songwen # or company name
   url: "https://github.com/zero-hero-he" # your URL
-first_published: 2023 # if migrating another site, the year of your first publish
-                      # Must be a 4-digit integer year (math is used on it)
+first_published:
+  2023 # if migrating another site, the year of your first publish
+  # Must be a 4-digit integer year (math is used on it)
 url: "http://zero-hero-he.github.io" # the base hostname & protocol for this site
-baseurl: "/song-may-marriage.github.io" # the subpath of your site, e.g. /blog
-            # Note you'll have to move your robots.txt to the root if you want it used.
-            # And list multiple sitemaps if there are other subdirectories you want indexed
-            # besides this blog.
+baseurl:
+  "/song-may-marriage" # the subpath of your site, e.g. /blog
+  # Note you'll have to move your robots.txt to the root if you want it used.
+  # And list multiple sitemaps if there are other subdirectories you want indexed
+  # besides this blog.
 lang: zh # used in HTML lang attributes
 
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: _Your greeting_  
+  title: _Your greeting_
   text: _Your detailed greeting text_
 # - displayed at the bottom
 closing-head: 婚礼地址
@@ -126,7 +127,7 @@ defaults:
 # to initialize arrays in assignments (assign myarr = site.empty_array)
 # (easier to grok than assign myarr = '' | split',')
 empty_array: []
-include: ['_pages','.htaccess']
+include: ["_pages", ".htaccess"]
 exclude:
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
@@ -134,7 +135,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - '*_README.txt'
+  - "*_README.txt"
   - gulpfile.js
   - jekyll-text-theme.gemspec
   - package-lock.json
@@ -144,6 +145,6 @@ exclude:
   - /screenshots
   - /test
   - /vendor
-  - '*_LICENSE.txt'
+  - "*_LICENSE.txt"
   - site.bat
   - compose.rb
